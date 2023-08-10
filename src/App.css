@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+#root{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+img{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    background-image: "./image.jpg";
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+body,html{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+.borderLessbtn{
+    display: flex;
+    border: none;
+    color: rgb(0, 158, 255);
+    align-self: flex-end;
+    background:none;
+    margin: 1rem;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+h5{
+    text-align: center;
+    border-bottom: 1px solid black;
+    line-height: 0.1rem;
+    margin: 20px 1rem 20px;
+}
+h5 span{
+    background: white;
+    padding: 0 10px ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+    margin: 1rem;
+}
+input{
+    border: none;
+    margin: 0.5rem;
+    padding-bottom: 0.4rem;
+    width: 80%;
+    outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.loginbtn{
+    margin: 1rem;
+    background-color: rgb(0, 158, 255);
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    border: none;
+    color: white;
+    transition: all ease 0.2s;
+}
+.loginbtn:active{
+    opacity: 0.82;
+    scale: 0.985;
+}
+.googleloginbtn{
+    margin:1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    border: none;
+}
+.registerbtn{
+    display: flex;
+    justify-content: center;
+}
+span .borderLessbtn{
+    margin: 0;
+    margin-left: 0.3rem;
+}
+.fa-solid {
+    color: #009eff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.span{
+    margin: 1rem;
+    border-bottom: 1px solid black;
+}
+.fa-brands .fa-google{
+    color: #009eff;
 }
